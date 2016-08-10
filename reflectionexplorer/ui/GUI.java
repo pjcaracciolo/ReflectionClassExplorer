@@ -53,29 +53,7 @@ public class GUI extends JFrame {
 				}
 			}
 		});
-		Class<?> clazz = null;
-		try {
-			URLClassLoader classLoader = URLClassLoader
-					.newInstance(new URL[] { new File("C:/Users/PJ Caracciolo/Desktop/Canvas.jar").toURI().toURL() });
-		clazz = classLoader.loadClass("java.awt.Canvas");
-		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		if (clazz != null)
-			System.out.println(clazz.toString());
-		for (Method m : clazz.getDeclaredMethods()) {
-			String params = "";
-			for (Class<?> s : m.getParameterTypes()) {
-				String aString = s.getName().toString();
-				params += aString + " ";
-			}
-		//	System.out.println(m.getName() + "| Parameter Types: "
-		//			+ params + "| Return Type: " + m.getReturnType());
-		}
+		
 	}
 
 	
