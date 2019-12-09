@@ -144,7 +144,7 @@ public class GUI extends JFrame {
 		JScrollPane scrollPane = new JScrollPane();
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		
-		//Terribly messy GUI builder code.  In retrospect this was unnecessary.
+		//Terribly messy GUI builder code
 		
 		gl_contentPane.setHorizontalGroup(gl_contentPane
 				.createParallelGroup(Alignment.LEADING)
